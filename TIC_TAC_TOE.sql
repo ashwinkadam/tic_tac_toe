@@ -1,8 +1,8 @@
 set serveroutput on;
 
 
---DROP TABLE  TIC_TAC_TOE;
---DROP TABLE TIC_TAC_TOE_TRACKER;
+DROP TABLE  TIC_TAC_TOE;
+DROP TABLE TIC_TAC_TOE_TRACKER;
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -26,6 +26,7 @@ INSERT INTO TIC_TAC_TOE_TRACKER(SYMBOL_CHK) VALUES(NULL);
 INSERT INTO TIC_TAC_TOE(COL1,COL2,COL3) VALUES(NULL,NULL,NULL);
 INSERT INTO TIC_TAC_TOE(COL1,COL2,COL3) VALUES(NULL,NULL,NULL);
 INSERT INTO TIC_TAC_TOE(COL1,COL2,COL3) VALUES(NULL,NULL,NULL);
+COMMIT;
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
@@ -46,6 +47,7 @@ INSERT INTO TIC_TAC_TOE VALUES (I,NULL,NULL,NULL);
 END LOOP;
 
 INSERT INTO TIC_TAC_TOE_TRACKER VALUES (NULL);
+COMMIT;
 END;
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -233,6 +235,7 @@ BEGIN
     END IF;
         
      PRINT_GAME();
+     COMMIT;
 END;
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -286,4 +289,3 @@ EXECUTE PLAY_GAME('0',1,1);
 
 --SELECT * FROM TIC_TAC_TOE_TRACKER;
 --SELECT * FROM TIC_TAC_TOE;
-
