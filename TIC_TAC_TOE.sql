@@ -1,8 +1,8 @@
 set serveroutput on;
 
 
-DROP TABLE  TIC_TAC_TOE;
-DROP TABLE TIC_TAC_TOE_TRACKER;
+--DROP TABLE  TIC_TAC_TOE;
+--DROP TABLE TIC_TAC_TOE_TRACKER;
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
